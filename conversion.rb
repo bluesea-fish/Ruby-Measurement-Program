@@ -4,28 +4,33 @@
 require 'colorize'
 #########################
 
-puts "Welcome To The Measurement Conversion Program!" "\n".yellow.on_red.blink
+puts "Welcome To The Measurement Conversion Program!" "\n" "\n".yellow.on_red.blink
 
 
 
-puts "Press 1 for 'Fl oz' to 'mL' Conversion... ".green
+puts "Press 1 for 'Fluid Ounces(Fl oz)' to 'Milliliters(mL)' Conversion... " "\n".green 
 	
-puts "Press 2 for 'Cups' to 'mL' Conversion... ".green
+puts "Press 2 for 'Cups(c)' to 'Milliliters(mL)' Conversion... " "\n".green 
 
-puts "Press 3 for 'Pints' to 'mL' Conversion...".green
+puts "Press 3 for 'Pints(pt)' to 'Milliliters(mL)' Conversion..." "\n".green
 
-puts "Press 4 for 'Quarts' to 'mL' Conversion...".green
+puts "Press 4 for 'Quarts(qt)' to 'Milliliters(mL)' Conversion..." "\n".green
 
-puts "Press 5 for 'Tallons' to 'mL' Conversion...".green
+puts "Press 5 for 'Gallons(gal)' to 'Milliliters(mL)' Conversion..." "\n".green
 
-puts "Press 6 for 'Teaspoons' to 'mL' Conversion...".green
+puts "Press 6 for 'Teaspoons(tsp)' to 'Milliliters(mL)' Conversion..." "\n".green
 
-puts "Press 7 for 'Tablespoons' to 'mL' Conversion...".green
+puts "Press 7 for 'Tablespoons(tbsp)' to 'Milliliters(mL)' Conversion..." "\n".green
 
-puts "Press 8 for 'OZ' to 'Grams' Conversion...".green
+puts "Press 8 for 'ounces(oz)' to 'Grams(g)' Conversion..." "\n".green
+
+puts "Press 9 for 'lbs(pounds)' to 'Grams(g)' Conversion..." "\n".green
+
+puts "Press 10 for 'ounces(oz)' to 'grains(gr)' Conversion..." "\n".green
 
 @getPRESS = gets.chomp
 	
+
 
 if @getPRESS.to_i == 1
 
@@ -33,7 +38,7 @@ if @getPRESS.to_i == 1
 
 	puts "Conversion for fl oz to mL" "\n" "\n".blue.on_yellow.blink
 		
-	print "Please input the ammount in fl oz: "
+	print "Please input the amount in fl oz: "
 		getFLOZ = gets.chomp.to_f
 	
 	@answer = getFLOZ * @ml
@@ -47,7 +52,7 @@ elsif @getPRESS.to_i == 2
 
 	puts "Conversion for cups to mL" "\n" "\n"
 
-	puts "Please input the ammount in cups: "
+	puts "Please input the amount in Cups(c): "
 		getCUPS = gets.chomp.to_f
 
 	@answer_2 = getCUPS * @ml_2
@@ -61,7 +66,7 @@ elsif @getPRESS.to_i == 3
 
 	puts "Conversion for pint to mL" "\n" "\n"
 
-	puts "Please input the ammount in pints: "
+	puts "Please input the amount in Pints(pt): "
 		getPINTS = gets.chomp.to_f
 
 	@answer_3 = getPINTS * @ml_3
@@ -75,7 +80,7 @@ elsif @getPRESS.to_i == 4
 
 	puts "Conversion for quarts to mL" "\n" "\n"
 
-	puts "Please input the ammount in quarts: "
+	puts "Please input the amount in Quarts(qt): "
 		getQUARTS = gets.chomp.to_f
 
 	@answer_4 = getQUARTS * @ml_4
@@ -88,7 +93,7 @@ elsif @getPRESS.to_i == 5
 
 	puts "Conversion for Gallons to mL" "\n" "\n"
 
-	puts "PLease input the ammount in Gallons: "
+	puts "PLease input the amount in Gallons(gal): "
 		getGALS = gets.chomp.to_f
 
 	@answer_5 = getGALS * @ml_5
@@ -101,7 +106,7 @@ elsif @getPRESS.to_i == 6
 
 	puts "Conversion for teaspoons to mL" "\n" "\n"
 	
-	puts "PLease input the ammount in teaspoons: "
+	puts "PLease input the amount in Teaspoons(tsp): "
 		getTEAS = gets.chomp.to_f
 
 	@answer_6 = getTEAS * @ml_6
@@ -115,12 +120,13 @@ elsif @getPRESS.to_i == 7
 
 	puts "Conversion for tablespoons to mL" "\n" "\n"
 	
-	puts "PLease input the ammount in tablespoons: "
+	puts "PLease input the amount in Tablespoons(tbsp): "
 		getTABLES = gets.chomp.to_f
 
 	@answer_7 = getTABLES * @ml_7
 
 	print getTABLES, " teaspoons".yellow, " is ", @answer_7, " mL".yellow
+
 
 elsif @getPRESS.to_i == 8
 
@@ -128,24 +134,40 @@ elsif @getPRESS.to_i == 8
 
 	puts "Conversion for oz to grams" "\n" "\n"
 
-	puts "Please input the ammount in OZ: "
+	puts "Please input the amount in Ounces(oz): "
 		getOZS = gets.chomp.to_f
 
 	@answer_8 = getOZS * @gram_1
 
 	print getOZS, " oz".yellow, " is ", @answer_8, " grams".yellow
 
-else
-	while @getPRESS.to_i == "".to_i
-		
-		if @getPRESS.nil?
-			puts "PLease enter a number..."
-		elsif @getPRESS.empty?
-			puts "PLease enter the corresponding number for the equation you want..."
-		else
-			break
-		end
-	end
+
+elsif @getPRESS.to_i == 9
+
+	@gram_2 = 480
+
+	puts "Conversion for pounds to grams" "\n" "\n"
+
+	puts "Please input the amount in Pounds(lbs): "
+		getLBS = gets.chomp.to_f
+
+	@answer_9 = getLBS * @gram_2
+
+	print getLBS, " lbs".yellow, " is " ,@answer_9, " grams".yellow
+
+
+elsif @getPRESS.to_i == 10
+
+	@grain_1 = 480
+	
+	puts "Conversion for ounces to grains" "\n" "\n"
+
+	puts "Please input the amount in Ounces(oz): "
+		getOZS_2 = gets.chomp.to_f
+
+	@answer_10 = getOZS_2 * @grain_1
+
+	print getOZS_2, " oz".yellow, " is ", @answer_10, " grains".yellow
 
 end
 
