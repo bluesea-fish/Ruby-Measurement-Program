@@ -42,7 +42,8 @@ if @getPRESS.to_i == 1
 		getFLOZ = gets.chomp.to_f
 	
 	@answer = getFLOZ * @ml
-
+	
+	print "\n" "Result:"
 	print getFLOZ, " fl oz".yellow, " is ", @answer, " mL".yellow
 
 
@@ -57,6 +58,7 @@ elsif @getPRESS.to_i == 2
 
 	@answer_2 = getCUPS * @ml_2
 
+	print "\n" "Result:"
 	print getCUPS, " cups".yellow, " is ",  @answer_2, " mL".yellow
 
 
@@ -71,6 +73,7 @@ elsif @getPRESS.to_i == 3
 
 	@answer_3 = getPINTS * @ml_3
 
+	print "\n" "Result:"
 	print getPINTS, " pints".yellow, " is ", @answer_3, "mL".yellow
 
 
@@ -85,6 +88,7 @@ elsif @getPRESS.to_i == 4
 
 	@answer_4 = getQUARTS * @ml_4
 
+	print "\n" "Result:"
 	print getQUARTS, " quarts".yellow, " is ", @answer_4, " mL".yellow
 
 elsif @getPRESS.to_i == 5
@@ -98,6 +102,7 @@ elsif @getPRESS.to_i == 5
 
 	@answer_5 = getGALS * @ml_5
 
+	print "\n" "Result:"
 	print getGALS, " gallons".yellow, " is ", @answer_5, " mL".yellow
 
 elsif @getPRESS.to_i == 6
@@ -111,6 +116,7 @@ elsif @getPRESS.to_i == 6
 
 	@answer_6 = getTEAS * @ml_6
 
+	print "\n" "Result:"
 	print getTEAS, " teaspoons".yellow, " is ", @answer_6, " mL".yellow
 
 
@@ -125,6 +131,7 @@ elsif @getPRESS.to_i == 7
 
 	@answer_7 = getTABLES * @ml_7
 
+	print "\n" "Result:"
 	print getTABLES, " teaspoons".yellow, " is ", @answer_7, " mL".yellow
 
 
@@ -139,6 +146,7 @@ elsif @getPRESS.to_i == 8
 
 	@answer_8 = getOZS * @gram_1
 
+	print "\n" "Result:"
 	print getOZS, " oz".yellow, " is ", @answer_8, " grams".yellow
 
 
@@ -153,6 +161,7 @@ elsif @getPRESS.to_i == 9
 
 	@answer_9 = getLBS * @gram_2
 
+	print "\n" "Result:"
 	print getLBS, " lbs".yellow, " is " ,@answer_9, " grams".yellow
 
 
@@ -167,7 +176,8 @@ elsif @getPRESS.to_i == 10
 
 	@answer_10 = getOZS_2 * @grain_1
 
-	print getOZS_2, " oz".yellow, " is ", @answer_10, " grains".yellow
+	print "\n" "Result:"
+	print "\n", getOZS_2, " oz".yellow, " is ", @answer_10, " grains".yellow
 
 end
 
