@@ -42,9 +42,9 @@ if @getPRESS.to_i == 1
 		getFLOZ = gets.chomp.to_f
 	
 	@answer = getFLOZ * @ml
-	
+
 	print "\n" "Result:"
-	print getFLOZ, " fl oz".yellow, " is ", @answer, " mL".yellow
+	print "\n" getFLOZ, " fl oz".yellow, " is ", @answer, " mL".yellow
 
 
 elsif @getPRESS.to_i == 2
@@ -59,7 +59,7 @@ elsif @getPRESS.to_i == 2
 	@answer_2 = getCUPS * @ml_2
 
 	print "\n" "Result:"
-	print getCUPS, " cups".yellow, " is ",  @answer_2, " mL".yellow
+	print "\n" getCUPS, " cups".yellow, " is ",  @answer_2, " mL".yellow
 
 
 elsif @getPRESS.to_i == 3
@@ -74,7 +74,7 @@ elsif @getPRESS.to_i == 3
 	@answer_3 = getPINTS * @ml_3
 
 	print "\n" "Result:"
-	print getPINTS, " pints".yellow, " is ", @answer_3, "mL".yellow
+	print "\n" getPINTS, " pints".yellow, " is ", @answer_3, "mL".yellow
 
 
 elsif @getPRESS.to_i == 4
@@ -89,7 +89,7 @@ elsif @getPRESS.to_i == 4
 	@answer_4 = getQUARTS * @ml_4
 
 	print "\n" "Result:"
-	print getQUARTS, " quarts".yellow, " is ", @answer_4, " mL".yellow
+	print "\n" getQUARTS, " quarts".yellow, " is ", @answer_4, " mL".yellow
 
 elsif @getPRESS.to_i == 5
 
@@ -103,7 +103,7 @@ elsif @getPRESS.to_i == 5
 	@answer_5 = getGALS * @ml_5
 
 	print "\n" "Result:"
-	print getGALS, " gallons".yellow, " is ", @answer_5, " mL".yellow
+	print "\n" getGALS, " gallons".yellow, " is ", @answer_5, " mL".yellow
 
 elsif @getPRESS.to_i == 6
 
@@ -117,7 +117,7 @@ elsif @getPRESS.to_i == 6
 	@answer_6 = getTEAS * @ml_6
 
 	print "\n" "Result:"
-	print getTEAS, " teaspoons".yellow, " is ", @answer_6, " mL".yellow
+	print "\n" getTEAS, " teaspoons".yellow, " is ", @answer_6, " mL".yellow
 
 
 elsif @getPRESS.to_i == 7
@@ -132,7 +132,7 @@ elsif @getPRESS.to_i == 7
 	@answer_7 = getTABLES * @ml_7
 
 	print "\n" "Result:"
-	print getTABLES, " teaspoons".yellow, " is ", @answer_7, " mL".yellow
+	print "\n" getTABLES, " teaspoons".yellow, " is ", @answer_7, " mL".yellow
 
 
 elsif @getPRESS.to_i == 8
@@ -147,7 +147,7 @@ elsif @getPRESS.to_i == 8
 	@answer_8 = getOZS * @gram_1
 
 	print "\n" "Result:"
-	print getOZS, " oz".yellow, " is ", @answer_8, " grams".yellow
+	print "\n",  getOZS, " oz".yellow, " is ", @answer_8, " grams".yellow
 
 
 elsif @getPRESS.to_i == 9
@@ -162,7 +162,7 @@ elsif @getPRESS.to_i == 9
 	@answer_9 = getLBS * @gram_2
 
 	print "\n" "Result:"
-	print getLBS, " lbs".yellow, " is " ,@answer_9, " grams".yellow
+	print "\n", getLBS, " lbs".yellow, " is " ,@answer_9, " grams".yellow
 
 
 elsif @getPRESS.to_i == 10
